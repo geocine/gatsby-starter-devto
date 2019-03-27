@@ -1,0 +1,21 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["react", "jsx-a11y", "import"],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/prefer-stateless-function": "off",
+    "react/require-default-props": "off",
+    "react/prop-types": "off",
+    "react/no-danger": "off",
+    "react/no-array-index-key": "off",
+    "react/forbid-prop-types": "off",
+    "linebreak-style": "off",
+    "consistent-return": "off"
+  },
+  "settings": {
+    "import/core-modules": []
+  },
+  "env": {
+    "browser": true
+  }
+}
