@@ -1,4 +1,3 @@
-const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
@@ -24,7 +23,7 @@ exports.createPages = ({ actions, graphql }) => {
     const allPosts = result.data.allDevArticles.edges
 
     // Iterate over the array of posts
-    _.each(allPosts, ({ node }) => {
+    allPosts.forEach(({ node }) => {
       const post = node.article
       // Create the Gatsby page for this WordPress post
       createPage({
