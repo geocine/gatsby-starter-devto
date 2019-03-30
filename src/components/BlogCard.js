@@ -32,12 +32,12 @@ const BlogCardStyle = styled.div`
       font-weight: 400;
     }
     div.highlight pre {
-      padding: 5%;
+      padding: 5% 5% 5% 85px;
       margin: 20px -85px;
       overflow-wrap: normal;
       overflow-x: auto;
     }
-    img {
+    a > img {
       width: 100%;
     }
     iframe {
@@ -47,7 +47,7 @@ const BlogCardStyle = styled.div`
   }
 
   @media only screen and (max-width: 420px) {
-    padding: 50px 20px;
+    padding: 50px 50px 50px 20px;
     margin: 0 auto 50px;
     div.body {
       div.highlight pre {
