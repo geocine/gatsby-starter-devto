@@ -50,13 +50,15 @@ const BlogCardStyle = styled.div`
     }
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 420px) {
     padding: 50px 20px;
+    margin: 0 auto 50px;
     div.body {
       div.highlight pre {
-        margin-left: -7%;
-        padding-left: 0%;
-        padding-right: 2%;
+        margin-left: -6%;
+        padding-left: 4%;
+        padding-right: 4%;
+        width: 104%;
       }
       iframe {
         width: 100%;
