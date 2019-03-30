@@ -10,7 +10,8 @@ const BlogCardStyle = styled.div`
   box-shadow: 3px 3px 0px #bababa;
   box-shadow: var(--theme-container-box-shadow, 3px 3px 0px #bababa);
   border-radius: 3px;
-  width: 800px;
+  max-width: 800px;
+  width: auto;
   padding: 50px 85px;
 
   h1.title {
@@ -46,6 +47,20 @@ const BlogCardStyle = styled.div`
     iframe {
       margin: 0 auto;
       display: block;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    padding: 50px 20px;
+    div.body {
+      div.highlight pre {
+        margin-left: -7%;
+        padding-left: 0%;
+        padding-right: 2%;
+      }
+      iframe {
+        width: 100%;
+      }
     }
   }
 `
