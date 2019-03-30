@@ -32,12 +32,8 @@ const BlogCardStyle = styled.div`
       font-weight: 400;
     }
     div.highlight pre {
-      width: 111%;
-      margin-left: -11%;
-      padding-left: 9%;
-      padding-right: 2%;
-      padding-top: 6%;
-      padding-bottom: 6%;
+      padding: 5%;
+      margin: 20px -85px;
       overflow-wrap: normal;
       overflow-x: auto;
     }
@@ -55,10 +51,7 @@ const BlogCardStyle = styled.div`
     margin: 0 auto 50px;
     div.body {
       div.highlight pre {
-        margin-left: -6%;
-        padding-left: 4%;
-        padding-right: 4%;
-        width: 104%;
+        margin: 20px -20px;
       }
       iframe {
         width: 100%;
