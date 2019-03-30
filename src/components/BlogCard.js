@@ -37,8 +37,8 @@ const BlogCardStyle = styled.div`
       overflow-wrap: normal;
       overflow-x: auto;
     }
-    a > img {
-      width: 100%;
+    img {
+      max-width: 100%;
     }
     iframe {
       margin: 0 auto;

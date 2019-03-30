@@ -1,0 +1,18 @@
+@import './blocks/reset';
+@import './blocks/highlight';
+
+@import './liquid-tags/LiquidTags';
+
+a {
+  color: #557de8;
+  text-decoration: none;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  color: #525252;
+  display: block;
+}
