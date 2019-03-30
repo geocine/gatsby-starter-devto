@@ -6,11 +6,9 @@ import BlogCard from '../components/BlogCard'
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <ul>
-      {data.allDevArticles.edges.map((node, key) => 
-        <BlogCard key={key} post={node.node.article} />
-        )}
-    </ul>
+    {data.allDevArticles.edges.map((node, key) => (
+      <BlogCard key={key} post={node.node.article} />
+    ))}
   </Layout>
 )
 
@@ -22,9 +20,9 @@ export const query = graphql`
       edges {
         node {
           article {
-            title,
-            slug,
-            description,
+            title
+            slug
+            description
             body_html
           }
         }
