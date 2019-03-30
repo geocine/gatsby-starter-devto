@@ -25,7 +25,7 @@ exports.createPages = ({ actions, graphql }) => {
     // Iterate over the array of posts
     allPosts.forEach(({ node }) => {
       const post = node.article
-      // Create the Gatsby page for this WordPress post
+      // Create the Gatsby page for this Dev.to post
       createPage({
         path: `/${post.slug}/`,
         component: postTemplate,
