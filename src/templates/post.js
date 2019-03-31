@@ -2,20 +2,20 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import BlogCard from '../components/BlogCard'
+import BlogPost from '../components/BlogPost'
 
-const BlogPost = ({ data }) => {
+const Post = ({ data }) => {
   const post = data.allDevArticles.edges[0].node.article
 
   return (
     <Layout>
       <Helmet title={`${post.title} | Blog`} />
-      <BlogCard post={post} />
+      <BlogPost post={post} />
     </Layout>
   )
 }
 
-export default BlogPost
+export default Post
 
 export const pageQuery = graphql`
   query PageQuery($id: Int!) {

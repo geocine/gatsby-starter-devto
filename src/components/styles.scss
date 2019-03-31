@@ -16,3 +16,15 @@ figcaption {
   color: #525252;
   display: block;
 }
+
+p > code {
+  margin: auto;
+  background: #f9f9fa;
+  padding: 0.1em 0.3em 0px;
+  border-radius: 2px;
+  color: #333842;
+  font-size: 0.84em;
+  vertical-align: 0em;
+  max-width: 100%;
+  line-height: 1.6em;
+}

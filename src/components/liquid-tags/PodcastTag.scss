@@ -24,7 +24,7 @@
 
     @media screen and (min-width: 830px) {
       margin: 20px 15px;
-      width: 77%
+      width: 77%;
     }
 
     a {
@@ -82,8 +82,6 @@
 
         img {
           display: inline;
-          width: 16px;
-          height: 16px;
           left: 0;
           margin-right: 5px;
           vertical-align: middle;
@@ -171,13 +169,14 @@
     .podcastliquidtag__podcastimage {
       animation: spin 20s linear infinite;
       -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+  }
+
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
     }
   }
 }
-
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
- }
- }
