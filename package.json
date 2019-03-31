@@ -6,6 +6,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
+    "axios": "^0.18.0",
     "bulma": "^0.7.0",
     "gatsby": "^2.1.0",
     "gatsby-awesome-pagination": "^0.3.3",
@@ -16,7 +17,7 @@
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sharp": "^2.0.5",
     "gatsby-remark-images": "^2.0.1",
-    "gatsby-source-dev": "^0.1.1",
+    "gatsby-source-dev": "^0.1.2",
     "gatsby-source-filesystem": "^2.0.1",
     "gatsby-transformer-remark": "^2.1.1",
     "gatsby-transformer-sharp": "^2.1.1",
