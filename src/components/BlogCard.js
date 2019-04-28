@@ -24,6 +24,10 @@ const BlogCardStyle = styled.div`
     a {
       margin-right: 8px;
     }
+    text-overflow: ellipsis;
+    color: #0a0a0a;
+    overflow: hidden;
+    white-space: nowrap;
   }
   .article-engagement-count {
     font-family: 'HelveticaNeue-CondensedBold', 'HelveticaNeueBoldCondensed',

@@ -4,7 +4,7 @@
 @import './liquid-tags/LiquidTags';
 
 a {
-  color: #557de8;
+  color: #0366d6;
   text-decoration: none;
 }
 
@@ -27,4 +27,14 @@ p > code {
   vertical-align: 0em;
   max-width: 100%;
   line-height: 1.6em;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  background: transparent;
+}
+
+body {
+  margin: 0;
 }
