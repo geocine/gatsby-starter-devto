@@ -1,7 +1,4 @@
 module.exports = {
-  siteMetadata: {
-    title: 'Gatsby + Dev.to Starter',
-  },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',

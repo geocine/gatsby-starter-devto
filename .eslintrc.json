@@ -9,8 +9,11 @@
     "react/no-danger": "off",
     "react/no-array-index-key": "off",
     "react/forbid-prop-types": "off",
+    "import/prefer-default-export": "off",
     "linebreak-style": "off",
-    "consistent-return": "off"
+    "consistent-return": "off",
+    "no-param-reassign": "off",
+    "no-return-assign": "off"
   },
   "settings": {
     "import/core-modules": []

@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 
+import config from '../config'
 import './styles.scss'
 
 const Header = styled.div`
@@ -21,11 +22,11 @@ const Header = styled.div`
 
 const TemplateWrapper = ({ children }) => (
   <Fragment>
-    <Helmet title="Home | Gatsby + Dev.to" />
+    <Helmet title={config.siteMetadata.title} />
     <main>
       <Header>
         <h3>
-          <Link to="/">gatsby-starter-devto</Link>
+          <Link to="/">{config.siteMetadata.header}</Link>
         </h3>
       </Header>
       {children}

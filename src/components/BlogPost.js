@@ -1,7 +1,8 @@
 import React from 'react'
-
+import Parser from 'html-react-parser'
 import styled from '@emotion/styled'
 
+import { linkBlock } from './blocks'
 import Card from './Card'
 
 const BlogPostStyle = styled.div`
@@ -50,20 +51,31 @@ const BlogPostStyle = styled.div`
   }
 `
 
-const BlogPost = ({ post }) => (
-  <Card>
+const BlogPost = ({ post }) => {
+  const removeWrappers = html => {
+    (['html', 'body']).forEach(tag => {
+      html = html.replace(`<${tag}>`, '')
+      html = html.replace(`</${tag}>`, '')
+    })
+    return html
+  }
+  const Content = Parser(removeWrappers(post.body_html), {
+    replace: ({ attribs, children }) => {
+      let content
+      ([linkBlock]).some(transform => (content = transform(attribs, children)))
+      return content
+    },
+  })
+  return (
+    <Card>
     <BlogPostStyle>
       <h1 className="title">
         <a href={`/${post.slug}`}>{post.title}</a>
       </h1>
-      <div
-        className="body"
-        dangerouslySetInnerHTML={{
-          __html: post.body_html,
-        }}
-      />
+      <div className="body">{Content}</div>
     </BlogPostStyle>
   </Card>
-)
+  )
+}
 
 export default BlogPost
