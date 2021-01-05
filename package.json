@@ -6,7 +6,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bulma": "^0.7.0",
     "gatsby": "^2.1.0",
     "gatsby-awesome-pagination": "^0.3.3",
