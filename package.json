@@ -19,7 +19,7 @@
     "gatsby-remark-images": "^2.0.1",
     "gatsby-source-dev": "^0.1.4",
     "gatsby-source-filesystem": "^2.0.1",
-    "gatsby-transformer-remark": "^2.1.1",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.1.1",
     "html-react-parser": "^0.6.4",
     "node-sass": "^4.9.2",
